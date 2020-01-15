@@ -96,6 +96,7 @@
 	background-image: url('../img/bg1.png');
 	background-repeat: repeat;
 	position: relative;
+	overflow: hidden;
 	&::before {
 		content: '';
 		position: absolute;
@@ -180,8 +181,10 @@
 
 .works {
 	color: #2b2a30;
+
 	&__inner {
 		background-color: #acacac;
+		padding: 20px 70px 100px;
 	}
 	&__title {
 		font-size: 20px;
@@ -200,6 +203,18 @@
 			text-transform: uppercase;
 			font-size: 12px;
 		}
+	}
+	&__items-inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 50%;
+		
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 }
 
