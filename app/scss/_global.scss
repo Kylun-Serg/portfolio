@@ -1,0 +1,46 @@
+html {
+	box-sizing: border-box;
+	line-height: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-weight: 400;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wrap {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+	// overflow: hidden;
+}
+
+.btn {
+	background-color: $red;
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+	border-radius: 5px;
+}
