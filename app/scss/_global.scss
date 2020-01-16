@@ -64,7 +64,7 @@ button {
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
-	transition: 0.2s;
+	// transition: 0.2s;
 	&:hover {
 		box-shadow: 0 0 10px $red;
 		transition-delay: .6s;
@@ -145,5 +145,58 @@ button {
 	border-radius: 10px;
 }
 
+.active-btn {
+	& .btn__line--top {
+			animation: anim1 1s infinite; 
+	}
+	& .btn__line--left {
+		animation: anim3 1s infinite; 
+	}
+		
+	& .btn__line--bottom {
+		animation: anim2 1s infinite;
+	}
 
+	& .btn__line--right {
+		animation: anim4 1s infinite;
+	}
+}
 
+@keyframes anim1 {
+  from {
+	left: -100%;
+  }
+  to {
+	left: 100%;
+  }
+}
+
+@keyframes anim2 {
+  from {
+	right: -100%;
+  }
+  to {
+    
+	right: 100%;
+  }
+}
+
+@keyframes anim3 {
+  from {
+	bottom: -100%;
+  }
+  to {
+    
+	bottom: 100%;
+  }
+}
+
+@keyframes anim4 {
+  from {
+	top: -100%;
+  }
+  to {
+    
+	top: 100%;
+  }
+}
