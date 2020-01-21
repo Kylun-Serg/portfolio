@@ -9,15 +9,15 @@
 </head>
 <body>
   
-<header class="header">
+<header class="header" id="home">
   	<div class="wrap">
 	  		<div class="header__top">
 	  			<nav class="header__menu">
-	  				<li><a href="#">Home</a></li>
-	  				<li><a href="#">About us</a></li>
-	  				<li><a href="#">Portfolio</a></li>
-	  				<li><a href="#">Service</a></li>
-	  				<li><a href="#">Contact us</a></li>
+	  				<li><a href="#home">Home</a></li>
+	  				<li><a href="#about">About me</a></li>
+	  				<li><a href="#portfolio">Portfolio</a></li>
+	  				<li><a href="#skills">Skills</a></li>
+	  				<li><a href="#contact">Contact with me</a></li>
 	  			</nav>
 	  			<div class="social">
 					<a href="#">
@@ -54,7 +54,7 @@
   		<div class="header__title">
   			Sergey Kulynets
   		</div>
-  		<div class="header__inner">
+  		<div class="header__inner" id="about">
   			<div class="header__inner-box">
   				<div class="header__inner-box-title">
   					I AM <br />
@@ -65,7 +65,9 @@
   				</div>
   				<div class="header__inner-box-text">
   					
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque faucibus, aliquet ipsum vestibulum, suscipit ante. Integer orci odio, aliquam nec iaculis sit amet, consectetur vel lectus. Fusce pharetra, aTugue sed euismod aliquet, nunc lectus tempus felis, a imperdiet urna lacus nec erat. Sed sed mauris accumsan, semper quam non, semper ex. Duis quis porttitor lacus, eu interdum nunc. Sed urna eros, volutpat in mauris non, elementum tempor neque.
+				<p>Greetings!</p> <p>My name is Sergey and I am engaged in design, adaptive, cross-browser layout and website development using Wordpress and OpenCart engines, as well as their SEO optimization and promotion. </p>
+				<p>I am more inclined to the work on the layout, but also often working on turnkey website development. I’ve been running several sites for more than 1 year.</p>
+				<p>As the man myself - I am positive and communicative. Web development is an important component of my life.</p>
   				</div>
   				<a href="#" class="btn">
 					<span class="btn__line btn__line--top"></span>
@@ -79,7 +81,7 @@
   	</div>
 </header>
 
-<section class="about">
+<section class="about" id="skills">
 	<div class="wrap">
 		<div class="about__inner">
 			<div class="about__content">
@@ -89,8 +91,16 @@
 						PROFESSIONAL
 					</div>
 					<div class="about__content-text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque faucibus, aliquet ipsum vestibulum, suscipit ante. Integer orci odio, aliquam nec iaculis sit amet, consectetur vel lectus. Fusce pharetra, augue sed euismod aliquet, nunc lectus tempus felis, a imperdiet urna lacus nec erat. </p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque faucibus, aliquet ipsum vestibulum, suscipit ante. Integer orci odio, aliquam nec iaculis sit amet, consectetur vel lectus. Fusce pharetra, augue sed euismod aliquet, nunc lectus tempus felis, a imperdiet urna lacus nec erat. </p>
+						<div class="about__content-text-title">Layout of web-pages and sites</div>
+						<p>I am working on adaptive cross-browser layout of sites. In my work I use HTML5 and CSS3, Photoshop, Figma, preprocessors (SASS, SCSS), Gulp 4 project builder. </p>
+						<div class="about__content-text-title">WEBSITE DEVELOPMENT</div>
+						<p>I develop websites of various complexity - from a business card site to an online store. I work with such popular CMS as WordPress and OpenCart. I am confident while working with HTML, CSS, PHP, JQvery. </p>
+	
+						<div class="about__content-text-title">SITE SUPPORT</div>
+						<p>I have worked and was engaged in web-page support - content updating, editing, site transfer, etc. </p>
+
+						<div class="about__content-text-title">INTERNET PROMOTION</div>
+						<p>An integral part of modern web development is the promotion of sites on the Internet. I can be useful in solving tasks regarding this field. I am also engaged in web-page SEO optimization, advertising on various sites and social networks.</p>
 					</div>
 					<a href="#" class="btn">
 						<span class="btn__line btn__line--top"></span>
@@ -102,7 +112,7 @@
 			</div>
 			<div class="about__skills">
 				<div class="about__title">
-					OUR TEAM
+					MY SKILLS
 				</div>
 				<div class="about__skills-box">
 					<div class="about__box-img">
@@ -113,7 +123,7 @@
 							web-desing
 						</div>
 						<div class="about__box-content-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque faucibus, aliquet ipsum vestibulum, suscipit ante. Integer orci odio, aliquam nec iaculis sit amet, consectetur vel lectus.
+							Figma, Adobe Photoshop, Adobe illustrator
 						</div>
 					</div>
 				</div>
@@ -127,7 +137,7 @@
 							web-develper
 						</div>
 						<div class="about__box-content-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque faucibus, aliquet ipsum vestibulum, suscipit ante. Integer orci odio, aliquam nec iaculis sit amet, consectetur vel lectus.
+							HTML5 / PUG,<br/>CSS3 / SASS / SCSS / Bootstrap 4<br/>jQuery
 						</div>
 					</div>
 				</div>
@@ -141,7 +151,7 @@
 							web-develope
 						</div>
 						<div class="about__box-content-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque faucibus, aliquet ipsum vestibulum, suscipit ante. Integer orci odio, aliquam nec iaculis sit amet, consectetur vel lectus.
+							Git, Gulp 4, PHP, JavaScript, Wordpress, OpenCart
 						</div>
 					</div>
 				</div>
@@ -150,7 +160,7 @@
 	</div>
 </section>
 
-<section class="works">
+<section class="works" id="portfolio">
 	<div class="bg-gradient">
 		<div class="wrap">
 			<div class="works__inner">
@@ -581,7 +591,7 @@
 	</div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="contact">
 	<div class="wrap">
 			<div class="copy">Copyright © 2020 | All rights reserved</div>
 			<div class="avtor">by Sergey Kulynets</div>
