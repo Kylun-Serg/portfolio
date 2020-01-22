@@ -12,6 +12,20 @@ $(".header__menu").on("click","a", function (event) {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 200){
+	$('.header__top').addClass("sticky");
+	}
+	else{
+	$('.header__top').removeClass("sticky");
+	}
+});
+
+$(".menu__btn").on('click', function(e) {
+	e.preventDefault;
+	$(this).toggleClass('menu__btn-active');
+});
+
 var mixer = mixitup('.works__items-inner');
   
 });
