@@ -40,11 +40,12 @@ button {
 
 .menu__btn {
 	display: block;
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 	background-color: #fff;
 	border-radius: 50%;
 	position: relative;
+	z-index: 3;
 	span {
 		position: absolute;
 		top: 50%;
@@ -94,27 +95,58 @@ button {
 
 .menu {
 	a {
-		color: #fff;
-		display: inline-block;
+		color: #222;
 		background-color: #fff;
+		width: 45px;
+		height: 45px;
+		font-size: 18px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #000;
+		position: absolute;
+		left: calc(50% - 20px);
+    	top: calc(50% - 20px);
+		z-index: 0;
+		transition: .3s;
+	}
+	&__block {
+		position: absolute;
+		top: 50px;
+		left: 15px;
+		display: none;
 	}
 
 }
 
-// .btn {
-// 	background-color: $red;
-// 	width: 140px;
-// 	height: 40px;
-// 	text-align: center;
-// 	line-height: 40px;
-// 	font-size: 14px;
-// 	color: #fff;
-// 	text-transform: uppercase;
-// 	letter-spacing: 0.025em;
-// 	border-radius: 5px;
-// 	position: relative;
-// }
+	.menu {
+		a {
+			@include transition;
+		}		
+	}
 
+.menu-active {
+	a:nth-child(1) {
+		transform: translate(0%, -160%);
+	}
+	a:nth-child(2) {
+		transform: translate(130%, -120%);
+	}
+
+	a:nth-child(3) {
+		transform: translate(200%, -10%);
+	}
+
+	a:nth-child(4) {
+		transform: translate(130%, 90%);
+	}
+
+	a:nth-child(5) {
+		transform: translate(0%, 150%);
+	}
+
+}
 
 
 .btn {

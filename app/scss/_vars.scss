@@ -1,1 +1,9 @@
 $red: #fb5255;
+
+@mixin transition {
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      transition: all #{$i * .1}s ease-in;
+    }
+  }
+}  

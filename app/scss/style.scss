@@ -26,9 +26,6 @@
 				}
 			}
 			&.sticky {
-				.header__top-inner {
-					height: 60px;
-				}
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -47,6 +44,7 @@
 						svg {
 							#icon-color {
 								fill: #000;
+								transition: 0s;
 							}
 						}
 						&:hover {
