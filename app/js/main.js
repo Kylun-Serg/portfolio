@@ -21,11 +21,12 @@ $(window).scroll(function() {
 	}
 });
 
-$(".menu__btn").on('click', function(e) {
-	e.preventDefault();
+$(".menu__btn").on('click', function() {
+	// e.preventDefault();
 	$(this).toggleClass('menu__btn-active');
     $('.menu').toggleClass('menu-active');
 });
+
 
 var mixer = mixitup('.works__items-inner');
   
